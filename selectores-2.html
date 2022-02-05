@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores Combinadores</title>
+    <style>
+        div p {/*selecciona a los descendientes p debajo de div*/
+            color:red;
+        }
+        div > .hijo {/*seleccion a los elementos de la clase hijo que estan despues del div*/
+            color:orangered;
+        }
+        div + div{/*seleccion a la etiqueda div que este justo despues de un div*/
+            background-color: aquamarine;
+        }
+        div ~ section{/* selecciona a todos los hermanos section que estan despues de Div*/
+            background-color: brown;
+        }
+        div ~ section p{ /*Selecciona elementos hermanos (todos los section que esten debajo se el y todos los hijos p dentro de section*/
+            color: darkgoldenrod;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Platzi</p>
+        <p>Es</p>
+        <p>Increible</p>
+        <p class="hijo">Hijo Directo</p>
+    </div>
+    <div>
+        <p>Adyacente</p>
+        <p class="hijo">Hijo Directo II</p>
+    </div>
+    <section>
+        <p>General de Hermanos</p>
+    </section>
+</body>
+</html>
