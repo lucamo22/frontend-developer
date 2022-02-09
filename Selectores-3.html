@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores 3</title>
+    <style>
+        p{
+            color: blueviolet;
+        }
+        p:hover{
+            color: aquamarine;
+        }
+        div p{
+            color: brown;
+        }
+        div p:nth-child(2){ /*Indica el segundo hijo de Div*/
+            color: darkgoldenrod;
+        }
+        p::first-letter{
+            color: tomato;
+        }
+        div p::after{
+            content:"<>";
+        }
+        ::placeholder{
+            color: tomato;
+        }
+        ::selection{
+            background-color: cyan;
+            animation: infinite;
+        }
+    </style>
+</head>
+<body>
+    <p>Platzi</p>
+    <div>
+        <p>Master</p>
+        <p>Lo Mejor</p>
+    </div>
+    <input type="text" placeholder="name">
+</body>
+</html>
