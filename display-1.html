@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display-1</title>
+    <style>
+        div{ /*De tipo Block, ocupa todo el ancho del documento y es posible modificar sus caracteristicas (Height, Width, Margin...)*/
+            background-color: aquamarine;
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+        }
+        a{ /*De tipo Inline, se ajusta solo al tamaño del contenido y no es posible modificar caracteristicas como Width o Height*/
+            background-color: blueviolet;
+            margin: 20px;
+        }
+        button{ /*De tipo Inline-Block se dibuja como un inline y cuenta con las caracteristicas de un Block*/
+            background-color: violet;
+            width: 50px;
+            height: 40px;
+            margin: 20px;
+
+        }
+    </style>
+</head>
+<body>
+    <div>Block</div>
+    <a>Inline</a>
+    <button>Inline-Block</button>
+</body>
+</html>
